@@ -1,0 +1,181 @@
+@charset "utf-8";
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	outline: none;
+}
+body{
+	font-size: 62.5%;
+	font-family: 'Open Sans', 'Hiragino Sans GB', 'Microsoft Yahei', '微软雅黑', sans-serif;
+	text-align: center;
+	color: #343d45;
+	line-height: 1;
+	background: #fafafa;
+	position: relative;
+}
+/*hack*/
+.clear{
+	border-top:1px solid transparent !important;
+	margin-top:-1px !important;
+	border:none;
+	margin:0;
+	padding:0;
+	clear:both;
+	visibility:hidden;
+}
+
+/*~Header*/
+.header{
+	background: #33f;
+	height: 200px;
+	background: url('img/header-bg.jpg') center center;
+	overflow: hidden;
+}
+.header-mask{
+	background-color: rgba(0, 144, 255, .80);
+	display: block;
+	height: 100%;
+	width: 100%;
+	-webkit-transition: background-color .3s ease-in-out 0s;
+}
+.header .inner{
+	width: 90%;
+	max-width: 900px;
+	margin: 0px auto 0;
+	position: relative;
+}
+.bio{
+	padding: 115px 0 0;
+	
+}
+.bio-avartar{
+	background: #00f;
+	width: 100px;
+	height: 80px;
+	display: block;
+	position: absolute;
+	width: 15%;
+}
+.bio-text{
+	float: left;
+	margin: 20px 0 0 0%;
+	text-align: left;
+	color: #fff;
+}
+.bio-name{
+	font-size: 2.4em;
+	font-weight: 700;
+}
+.bio-tagline{
+	margin: 0.5em 0 0 0;
+	font-size: 1.8em;
+}
+.header .line{
+	width: 15%;
+	max-width: 900px;
+	height: 1000px;
+	float: left;
+}
+.header .line .inner{
+	width: 10px;
+	background: #ff0;
+	display: block;
+	height: 100%;
+	float: right;
+	margin: 0 30px 0 0;
+}
+
+/*~Timeline*/
+.timeline{
+	width: 90%;
+	max-width: 900px;
+	margin: 0px auto 30px;
+}
+.timeline .line{
+	width: 15%;
+	max-width: 900px;
+	height: 1000px;
+	float: left;
+}
+.timeline .line .inner{
+	width: 10px;
+	background: #ff0;
+	display: block;
+	height: 100%;
+	float: right;
+	margin: 0 30px 0 0;
+}
+.items{
+	width: 85%;
+	float: right;
+	height: 100%;
+	padding-top: 20px;
+}
+.item{
+
+}
+.card{
+	display: inline-block;
+	background: #fff;
+	border-radius: 8px;
+	box-shadow: 0 10px 10px rgba(0,0,0,0.04);
+	margin: 20px auto 30px;
+	width: 100%;
+	position: relative;
+}
+.card .inner{
+	padding: 20px;
+	font-size: 1.8em;
+	text-align: left;
+	line-height: 1.6;
+	color: #343d45;
+}
+.card-time{
+	color: #8c939c;
+	font-size: 1.6em;
+	position: absolute;
+	left: 5px;
+	top: -27px;
+}
+
+/*~Footer*/
+.footer .inner{
+	width: 90%;
+	max-width: 900px;
+	margin: 0 auto;
+	padding: 40px 15px 40px;
+	font-size: 1.2em;
+	border-top: 1px solid #ddd;
+}
+/*~Stuck*/
+.bio-name,
+.bio-tagline{
+	-webkit-transition: all .2s ease-out 0s;
+}
+.stuck .header{
+	opacity: 0.9;
+}
+.stuck .header-mask{
+	background: rgba(0, 144, 255, 1);
+}
+.stuck .header{
+	position:fixed !important;
+	z-index: 9999;
+	width: 100%;
+	top: -140px;
+}
+.stuck .bio-name{
+	margin-top: 20px;
+}
+.stuck .bio-tagline{
+	opacity: 0;
+
+}
+.stuck .header .bio{
+
+}
+.stuck .main{
+	margin-top: 200px;
+}
